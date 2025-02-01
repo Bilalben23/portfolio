@@ -4,7 +4,7 @@ import { FaStarAndCrescent } from "react-icons/fa"
 
 export default function Header() {
     return (
-        <header className='flex items-center justify-between bg-dark-default px-10 py-4'>
+        <header className='flex items-center justify-between bg-dark-default px-20 py-4'>
             <Link to="here" duration={500} smooth>
                 <p>Bilal</p>
             </Link>
@@ -13,7 +13,7 @@ export default function Header() {
                     <li>
                         <Link
                             to="about"
-                            className='cursor-pointer text-dark-500'
+                            className='cursor-pointer text-dark-600'
                             smooth
                             duration={500}>About
                         </Link>
@@ -21,21 +21,21 @@ export default function Header() {
                     <li>
                         <Link
                             to="work"
-                            className='cursor-pointer text-dark-500'
+                            className='cursor-pointer text-dark-600'
                             smooth
                             duration={500}>Work</Link>
                     </li>
                     <li>
                         <Link
                             to="testimonials"
-                            className='cursor-pointer text-dark-500'
+                            className='cursor-pointer text-dark-600'
                             smooth
                             duration={500}>Testimonials</Link>
                     </li>
                     <li>
                         <Link
                             to="testimonials"
-                            className='cursor-pointer text-dark-500'
+                            className='cursor-pointer text-dark-600'
                             smooth
                             duration={500}>Contact</Link>
                     </li>
