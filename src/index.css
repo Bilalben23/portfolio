@@ -1,4 +1,25 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-daisyui {}
+@theme {
+
+    /* plate for the dark mode */
+    --color-dark-default: #030712;
+    --color-dark-50: #111827;
+    --color-dark-100: #1f2937;
+    --color-dark-200: #374151;
+    --color-dark-300: #4b5563;
+    --color-dark-400: #6b7280;
+    --color-dark-500: #9ca3af;
+    --color-dark-600: #d1d5db;
+    --color-dark-700: #e5e7eb;
+    --color-dark-800: #f3f4f6;
+    --color-dark-900: #f9fafb;
+    --color-dark-950: #ffffff;
+
+    --font-inter: "Inter", serif;
+}
+
+html {
+    @apply bg-dark-50 font-inter
+}

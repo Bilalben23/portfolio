@@ -1,14 +1,23 @@
-import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import About from "./components/About";
+import Experience from "./components/Experience";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Skills from "./components/Skills";
+import Testimonials from "./components/Testimonials";
+import Work from "./components/Work";
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route>
-          <Route />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <>
+      <Header />
+      <Hero />
+      <About />
+      <Skills />
+      <Experience />
+      <Work />
+      <Testimonials />
+      <Footer />
+    </>
   )
 }
