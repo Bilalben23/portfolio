@@ -9,11 +9,11 @@ export default function Hero() {
         <div className='flex flex-col-reverse md:flex-row items-center justify-between bg-dark-default py-10 gap-y-6 px-5 md:px-20 gap-x-30 md:h-[calc(100vh-90px)] ' id="hero">
             <div>
                 <h1 className='text-4xl font-black mb-2'>Hi, I am Bilal 👋</h1>
-                <p className='text-sm text-dark-600'>I'm a full stack developer (React.js & Node.js) with a focus on creating (and occasionally designing) exceptional digital experiences that are fast, accessible, visually appealing, and responsive. Even though I have been creating web applications for over 3 years, I still love it as if it was something new.</p>
+                <p className='text-sm text-dark-600'>I'm a passionate full-stack developer specializing in React.js and Node.js, dedicated to building high-performance, accessible, and visually engaging digital experiences. With over 3 years of experience in web development, I still approach every project with the same excitement and curiosity as when I first started. My goal is to create fast, responsive, and user-friendly applications that leave a lasting impact</p>
                 <div className='mt-8 text-dark-600 text-xs'>
                     <div className='flex items-center gap-x-2'>
                         <FaLocationDot />
-                        <p>Tanger, Morocco</p>
+                        <p>Morocco</p>
                     </div>
                     <div className='flex items-center gap-x-2 pl-0.5 mt-1'>
                         <p className='w-[8px] h-[8px] bg-[#10b981] rounded-full shadow'></p>

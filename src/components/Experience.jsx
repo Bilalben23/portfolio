@@ -1,42 +1,36 @@
-import React from 'react'
-
-
 const experiences = [
     {
         id: 1,
-        company: "Google",
-        title: "Frontend Engineer",
+        company: "Freelance",
+        title: "Full Stack Developer",
         details: [
-            "Developed high-performance web applications using React.",
-            "Collaborated with cross-functional teams to deliver innovative solutions.",
-            "Optimized user interfaces for maximum speed and scalability.",
-            "Integrated RESTful APIs to enhance data-driven features."
+            "Developed both frontend and backend for various web applications.",
+            "Designed user-friendly interfaces and integrated backend services.",
+            "Built and maintained RESTful APIs for various functionalities such as user authentication and data handling.",
+            "Implemented security measures for protecting user data and ensuring safe transactions."
         ],
-        duration: "Jan 2020 - Present"
+        duration: "Feb 2025 - Present"
     },
     {
         id: 2,
-        company: "Facebook",
-        title: "Web Developer",
+        company: "Freelance",
+        title: "Frontend Developer",
         details: [
-            "Built responsive, mobile-first web interfaces using modern JS frameworks.",
-            "Implemented A/B testing to improve conversion rates.",
-            "Enhanced UX by collaborating closely with designers and product teams.",
-            "Maintained and updated legacy code while migrating to new technologies."
+            "Designed and developed engaging and responsive user interfaces using React.js and other modern frontend technologies.",
+            "Focused on improving user experience by ensuring clean and intuitive UI/UX design.",
+            "Optimized frontend performance to ensure fast load times and responsiveness across devices."
         ],
-        duration: "Mar 2018 - Dec 2019"
+        duration: "Freelance"
     },
     {
         id: 3,
-        company: "Amazon",
-        title: "Software Engineer",
+        company: "Freelance",
+        title: "Tester/Debugger",
         details: [
-            "Designed and developed scalable microservices for e-commerce.",
-            "Worked on performance optimization and API integrations.",
-            "Implemented CI/CD pipelines to automate testing and deployment.",
-            "Collaborated with teams across different regions to standardize processes."
+            "Tested and debugged various web applications to ensure functionality and quality.",
+            "Diagnosed and fixed issues using tools like Chrome DevTools and Postman."
         ],
-        duration: "Jun 2016 - Feb 2018"
+        duration: "Freelance"
     }
 ];
 
@@ -50,7 +44,7 @@ export default function Experience() {
             <div className='mt-6 flex gap-y-7 items-center flex-col'>
                 {
                     experiences.map(experience => {
-                        return <div className='flex flex-col gap-y-3 gap-x-5 shadow-lg bg-dark-100 w-[95%] p-8 md:w-[70%] rounded justify-between' key={experience.id}>
+                        return <div className='flex flex-col md:flex-row  gap-y-3 gap-x-5 shadow-lg bg-dark-100 w-[95%] p-8 md:w-[70%] rounded justify-between' key={experience.id}>
                             <div className='flex-1'>
                                 <p className='font-semibold text-lg text-[#10b981]'>{experience.company}</p>
                             </div>
