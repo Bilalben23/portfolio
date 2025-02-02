@@ -4,9 +4,9 @@ import personalImage from "../assets/personalImg.jpg"
 
 export default function About() {
     return (
-        <section className='my-10 p-10'>
-            <h2 className='w-fit px-3 shadow py-1 mx-auto rounded-xl bg-dark-200 text-dark-600 text-sm mb-8'>About me</h2>
-            <div className='flex items-start gap-x-25'>
+        <section className='my-20 px-20' id='about'>
+            <h2 className='w-fit px-5 shadow py-1 mx-auto rounded-xl bg-dark-200 text-dark-600 text-sm mb-8'>About me</h2>
+            <div className='flex items-start gap-x-30'>
                 <div className='relative grow-0 flex-1 mt-5'>
                     <div className='bg-dark-200 w-[350px] h-[400px]'></div>
                     <img src={personalImage} alt="Bilal's image" className='absolute w-full h-full -top-5 -right-5 border-b-8 border-l-8 border-dark-50' />
