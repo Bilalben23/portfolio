@@ -4,17 +4,18 @@ import personalImage from "../assets/personalImg.jpg"
 
 export default function About() {
     return (
-        <section className='my-20 px-20' id='about'>
+        <section className='my-20 px-5 md:px-20' id='about'>
             <h2 className='w-fit px-5 shadow py-1 mx-auto rounded-xl bg-dark-200 text-dark-600 text-sm mb-8'>About me</h2>
-            <div className='flex items-start gap-x-30'>
-                <div className='relative grow-0 flex-1 mt-5'>
+            <div className='flex items-start gap-x-30 flex-col gap-y-4 md:flex-row'>
+
+                <div className='relative grow-0 flex-1 mt-5 mx-auto'>
                     <div className='bg-dark-200 w-[350px] h-[400px]'></div>
                     <img src={personalImage} alt="Bilal's image" className='absolute w-full h-full -top-5 -right-5 border-b-8 border-l-8 border-dark-50' />
                 </div>
 
 
                 <div className='flex-1 text-xs flex flex-col gap-y-2'>
-                    <p className='text-base font-medium mb-3'>
+                    <p className='font-medium mb-3 text-base md:text-xl'>
                         <strong>Curious about me? Here you have it:</strong>
                     </p>
                     <p>I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.</p>

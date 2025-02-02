@@ -21,11 +21,11 @@ export const skills = [
 
 export default function Skills() {
     return (
-        <section className='bg-dark-default p-20' >
+        <section className='bg-dark-default md:p-20 p-5' >
             <h3 className='w-fit px-5 shadow py-1 mx-auto rounded-xl bg-dark-200 text-dark-600 text-sm mb-4'>Skills</h3>
             <p className='text-center text-sm'>The skills, tools and technologies I am really good at:</p>
             <div className='mt-8'>
-                <div className='grid grid-cols-8 gap-x-5 gap-y-7'>
+                <div className='grid grid-cols-3 sm:grid-cols-6 md:grid-cols-9 gap-x-5 gap-y-7'>
                     {
                         skills.map(skill => {
                             return <div key={skill.id} className='flex items-center flex-col gap-y-1'>

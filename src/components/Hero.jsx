@@ -6,7 +6,7 @@ import personalImage from "../assets/personalImg.jpg"
 
 export default function Hero() {
     return (
-        <div className='flex items-center justify-between bg-dark-default py-10 px-20 gap-x-30 h-[calc(100vh-90px)]'>
+        <div className='flex flex-col-reverse md:flex-row items-center justify-between bg-dark-default py-10 gap-y-6 px-5 md:px-20 gap-x-30 md:h-[calc(100vh-90px)] ' id="hero">
             <div>
                 <h1 className='text-4xl font-black mb-2'>Hi, I am Bilal 👋</h1>
                 <p className='text-sm text-dark-600'>I'm a full stack developer (React.js & Node.js) with a focus on creating (and occasionally designing) exceptional digital experiences that are fast, accessible, visually appealing, and responsive. Even though I have been creating web applications for over 3 years, I still love it as if it was something new.</p>
@@ -29,10 +29,13 @@ export default function Hero() {
                     </a>
                 </div>
             </div>
+
+
             <div className='relative'>
                 <div className='bg-dark-200 w-[230px] h-[240px]'></div>
                 <img src={personalImage} alt="Bilal's image" className='absolute w-full h-full -top-5 -left-5 border-r-8 border-b-8 border-dark-default' />
             </div>
-        </div>
+
+        </div >
     )
 }

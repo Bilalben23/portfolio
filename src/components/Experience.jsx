@@ -3,6 +3,7 @@ import React from 'react'
 
 const experiences = [
     {
+        id: 1,
         company: "Google",
         title: "Frontend Engineer",
         details: [
@@ -14,6 +15,7 @@ const experiences = [
         duration: "Jan 2020 - Present"
     },
     {
+        id: 2,
         company: "Facebook",
         title: "Web Developer",
         details: [
@@ -25,6 +27,7 @@ const experiences = [
         duration: "Mar 2018 - Dec 2019"
     },
     {
+        id: 3,
         company: "Amazon",
         title: "Software Engineer",
         details: [
@@ -44,12 +47,15 @@ export default function Experience() {
         <section className='my-20'>
             <h4 className='w-fit px-5 shadow py-1 mx-auto rounded-xl bg-dark-200 text-dark-600 text-sm mb-4'>Experience</h4>
             <p className='text-center text-sm text-dark-600'>Here is a quick summary of my most recent experiences:</p>
-            <div className='mt-6 flex flex-col gap-y-7 items-center'>
+            <div className='mt-6 flex gap-y-7 items-center flex-col'>
                 {
                     experiences.map(experience => {
-                        return <div className='flex gap-x-5 shadow-lg bg-dark-100 p-8 w-[70%] rounded justify-between' key={experience.id}>
+                        return <div className='flex flex-col gap-y-3 gap-x-5 shadow-lg bg-dark-100 w-[95%] p-8 md:w-[70%] rounded justify-between' key={experience.id}>
                             <div className='flex-1'>
                                 <p className='font-semibold text-lg text-[#10b981]'>{experience.company}</p>
+                            </div>
+                            <div className='flex-1 md:hidden'>
+                                <p className='text-dark-600 text-xs'>{experience.duration}</p>
                             </div>
                             <div className='flex-2'>
                                 <p className='font-semibold mb-2'>{experience.title}</p>
@@ -59,7 +65,7 @@ export default function Experience() {
                                     }
                                 </ul>
                             </div>
-                            <div className='flex-1'>
+                            <div className='flex-1 md:block hidden'>
                                 <p className='text-dark-600 text-xs'>{experience.duration}</p>
                             </div>
                         </div>

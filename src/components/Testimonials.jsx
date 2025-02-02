@@ -34,7 +34,7 @@ export default function Testimonials() {
     const [activeGroup, setActiveGroup] = useState(0);
 
     return (
-        <section className="py-20 w-[75%] mx-auto" id="testimonials">
+        <section className="py-20 md:w-[75%] w-[90%] mx-auto" id="testimonials">
             <h6 className="w-fit px-5 shadow py-1 mx-auto rounded-xl bg-dark-200 text-dark-600 text-sm mb-4">
                 Testimonials
             </h6>
@@ -42,7 +42,7 @@ export default function Testimonials() {
                 Nice things people have said about me:
             </p>
 
-            <div className="mt-7 grid grid-cols-3 gap-8">
+            <div className="mt-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 {testimonials[activeGroup].map((testimonial) => (
                     <div key={testimonial.id} className="p-5 rounded-md shadow bg-dark-100">
                         <div className="w-[50px] h-[50px] rounded-full mx-auto mb-4">
