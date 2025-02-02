@@ -34,7 +34,7 @@ export default function Testimonials() {
     const [activeGroup, setActiveGroup] = useState(0);
 
     return (
-        <section className="my-20 w-[75%] mx-auto">
+        <section className="py-20 w-[75%] mx-auto" id="testimonials">
             <h6 className="w-fit px-5 shadow py-1 mx-auto rounded-xl bg-dark-200 text-dark-600 text-sm mb-4">
                 Testimonials
             </h6>

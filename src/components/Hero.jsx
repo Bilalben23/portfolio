@@ -27,7 +27,6 @@ export default function Hero() {
                     <a href="https://www.linkedin.com/in/bilal-benyoussef-b38a27251" className='btn btn-ghost btn-sm btn-circle'>
                         <FaLinkedin size={20} />
                     </a>
-
                 </div>
             </div>
             <div className='relative'>

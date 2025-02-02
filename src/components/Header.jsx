@@ -34,7 +34,7 @@ export default function Header() {
                     </li>
                     <li>
                         <Link
-                            to="testimonials"
+                            to="contact"
                             className='cursor-pointer text-dark-600'
                             smooth
                             duration={500}>Contact</Link>
