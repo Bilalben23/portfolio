@@ -1,34 +1,34 @@
 import React, { useState } from 'react';
 
-// testimonials.js (you can import this from a separate file if needed)
 const testimonials = [
     [
         {
             id: 1,
             image: "https://www.svgrepo.com/show/5125/avatar.svg",
             quote:
-                "Job well done! I am really impressed. He is very very good at what he does :) I would recommend Sagar and will rehire in the future for Frontend development.",
-            name: "John Doe",
-            designation: "Founder - xyz.com",
+                "Youssef a démontré d'excellentes compétences en développement full-stack. Son travail est précis et il respecte toujours les délais.",
+            name: "Bilal Ben Youssef",
+            designation: "Développeur Full-Stack - Freelance",
         },
         {
             id: 2,
             image: "https://www.svgrepo.com/show/5125/avatar.svg",
             quote:
-                "Excellent work and great communication! The project was completed on time and exceeded expectations.",
-            name: "Jane Smith",
-            designation: "CEO - abc.org",
+                "Une collaboration très efficace ! Youssef maîtrise parfaitement React et Laravel et a livré un projet de grande qualité.",
+            name: "Salma El Idrissi",
+            designation: "Professeur en Informatique - Université de Chefchaouen",
         },
         {
             id: 3,
             image: "https://www.svgrepo.com/show/5125/avatar.svg",
             quote:
-                "I was impressed with his attention to detail and technical skills. Highly recommend for any frontend project.",
-            name: "Alice Johnson",
-            designation: "Product Manager - example.com",
-        },
+                "Youssef a montré beaucoup de motivation et une bonne maîtrise des outils informatiques durant son stage. Son travail sur la maintenance et l'installation des logiciels a été très satisfaisant.",
+            name: "Mohamed Idrissi",
+            designation: "Superviseur de stage – Société d'électricité",
+        }
     ]
 ];
+
 
 export default function Testimonials() {
     const [activeGroup, setActiveGroup] = useState(0);
@@ -36,10 +36,10 @@ export default function Testimonials() {
     return (
         <section className="py-20 md:w-[75%] w-[90%] mx-auto" id="testimonials">
             <h6 className="w-fit px-5 shadow py-1 mx-auto rounded-xl bg-dark-200 text-dark-600 text-sm mb-4">
-                Testimonials
+                Témoignages
             </h6>
             <p className="text-sm text-center">
-                Nice things people have said about me:
+                Ce que les gens disent de moi :
             </p>
 
             <div className="mt-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
