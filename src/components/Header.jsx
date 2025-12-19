@@ -2,6 +2,14 @@ import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { FaBars, FaTimes, FaStarAndCrescent, FaSun } from "react-icons/fa";
 
+// Définition des sections avec label et id
+const sections = [
+    { label: "À propos", id: "about" },
+    { label: "Projets", id: "work" },
+    { label: "Témoignages", id: "testimonials" },
+    { label: "Contact", id: "contact" },
+];
+
 export default function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isDarkTheme, setIsDarkTheme] = useState(true);
@@ -11,9 +19,7 @@ export default function Header() {
     };
 
     const toggleTheme = (e) => {
-        setIsDarkTheme(!e.target.checked); // when checkbox is checked, switch to light theme
-        // Optionally, you can apply the theme class to documentElement here:
-        // document.documentElement.classList.toggle('light-theme', e.target.checked);
+        setIsDarkTheme(!e.target.checked);
     };
 
     return (
@@ -21,22 +27,22 @@ export default function Header() {
             {/* Logo */}
             <Link to="hero" duration={500} smooth>
                 <button type="button" className='cursor-pointer font-semibold text-lg'>
-                    &lt;BB /&gt;
+                    &lt;YB /&gt;
                 </button>
             </Link>
 
-            {/* Desktop Navigation */}
+            {/* Navigation Bureau */}
             <nav className='hidden md:block transition'>
                 <ul className='flex items-center gap-x-5'>
-                    {["about", "work", "testimonials", "contact"].map((section) => (
-                        <li key={section}>
+                    {sections.map((section) => (
+                        <li key={section.id}>
                             <Link
-                                to={section}
+                                to={section.id}
                                 className='cursor-pointer text-dark-600'
                                 smooth
                                 duration={500}
                             >
-                                {section.charAt(0).toUpperCase() + section.slice(1)}
+                                {section.label}
                             </Link>
                         </li>
                     ))}
@@ -47,14 +53,18 @@ export default function Header() {
                         </button>
                     </li>
                     <li>
-                        <button type='button' className='btn bg-[#fff] text-black rounded-xl'>
-                            Download CV
-                        </button>
+                        <a
+                            href="/youssef_bouzizoua_cv.jpeg"
+                            download="Youssef_Bouzizoua_CV.jpeg"
+                            className="btn bg-white text-black rounded-xl"
+                        >
+                            Télécharger CV
+                        </a>
                     </li>
                 </ul>
             </nav>
 
-            {/* Mobile Menu Button */}
+            {/* Bouton Menu Mobile */}
             <div className='block md:hidden'>
                 <label className="btn btn-circle swap btn-ghost swap-rotate">
                     <input
@@ -67,26 +77,26 @@ export default function Header() {
                 </label>
             </div>
 
-            {/* Mobile Navigation Menu */}
+            {/* Menu Mobile */}
             {isMobileMenuOpen && (
                 <nav className="absolute h-[calc(100vh-80px)] z-10 top-16 right-0 bg-dark-default shadow-lg w-full md:hidden border-t border-dark-100">
                     <ul className='flex flex-col gap-y-3 p-6'>
-                        {["about", "work", "testimonials", "contact"].map((section) => (
-                            <li key={section}>
+                        {sections.map((section) => (
+                            <li key={section.id}>
                                 <Link
-                                    to={section}
+                                    to={section.id}
                                     className='cursor-pointer text-dark-600 block'
                                     smooth
                                     duration={500}
-                                    onClick={() => setIsMobileMenuOpen(false)} // Close menu on click
+                                    onClick={() => setIsMobileMenuOpen(false)}
                                 >
-                                    {section.charAt(0).toUpperCase() + section.slice(1)}
+                                    {section.label}
                                 </Link>
                             </li>
                         ))}
                         <div className='h-[0.5px] w-full bg-dark-100 my-2.5'></div>
                         <li className="flex items-center justify-between mb-3">
-                            <p className='text-sm text-dark-600'>Switch Theme</p>
+                            <p className='text-sm text-dark-600'>Changer le thème</p>
                             <label className="btn btn-circle swap swap-rotate btn-ghost">
                                 <input
                                     type="checkbox"
@@ -98,9 +108,13 @@ export default function Header() {
                             </label>
                         </li>
                         <li>
-                            <button type='button' className='btn bg-[#fff] text-black rounded-xl w-full'>
-                                Download CV
-                            </button>
+                            <a
+                                href="/youssef_bouzizoua_cv.jpeg"
+                                download="Youssef_Bouzizoua_CV.jpeg"
+                                className="btn bg-white text-black rounded-xl"
+                            >
+                                Télécharger CV
+                            </a>
                         </li>
                     </ul>
                 </nav>
