@@ -10,50 +10,30 @@ const projects = [
     [
         {
             id: 1,
-            name: "MERN Shop",
-            description:
-                "A full-featured e-commerce platform built with the MERN stack. It includes product listings, a shopping cart, checkout process, and user authentication.",
-            techStack: [
-                "React",
-                "Node.js",
-                "Express",
-                "MongoDB",
-                "Redux",
-                "TailwindCSS",
-                "Stripe"
-            ],
-            demoLink: "https://mernshop.example.com",
-            image: project1,
-        },
-        {
-            id: 2,
             name: "Social Connect",
             description:
-                "A social networking application built with MERN technologies that allows users to connect, share posts, and engage in real-time chat.",
+                "Une application de réseau social utilisant Laravel et React, permettant aux utilisateurs de se connecter, partager des publications et discuter en temps réel.",
             techStack: [
                 "React",
-                "Node.js",
-                "Express",
-                "MongoDB",
-                "Socket.io",
-                "Redux",
-                "Bootstrap"
+                "Laravel",
+                "Bootstrap",
+                "MySQL",
+                "TailwindCSS"
             ],
             demoLink: "https://socialconnect.example.com",
             image: project2,
         },
         {
-            id: 3,
+            id: 2,
             name: "Task Master",
             description:
-                "A task management application to help users organize projects, set deadlines, and track progress. Built using the MERN stack with an intuitive UI.",
+                "Une application de gestion de tâches pour aider les utilisateurs à organiser leurs projets, définir des échéances et suivre l'avancement. Construite avec Laravel et React avec une interface intuitive.",
             techStack: [
                 "React",
-                "Node.js",
-                "Express",
-                "MongoDB",
-                "Context API",
-                "TailwindCSS"
+                "Laravel",
+                "TailwindCSS",
+                "MySQL",
+                "Axios"
             ],
             demoLink: "https://taskmaster.example.com",
             image: project3,
@@ -64,13 +44,12 @@ const projects = [
             id: 4,
             name: "Blogify",
             description:
-                "A dynamic blog platform enabling users to create, edit, and share posts with a rich text editor. This platform is built with MERN and offers a seamless writing experience.",
+                "Une plateforme de blog dynamique permettant aux utilisateurs de créer, éditer et partager des articles avec un éditeur de texte enrichi. Basée sur Laravel et React pour une expérience fluide d’écriture.",
             techStack: [
                 "React",
-                "Node.js",
-                "Express",
-                "MongoDB",
+                "Laravel",
                 "Quill.js",
+                "MySQL",
                 "CSS3"
             ],
             demoLink: "https://blogify.example.com",
@@ -80,13 +59,12 @@ const projects = [
             id: 5,
             name: "ChatNow",
             description:
-                "A real-time chat application built on the MERN stack, featuring instant messaging and group chat functionalities using Socket.io.",
+                "Une application de chat en temps réel construite avec Laravel et React, offrant messagerie instantanée et discussions de groupe.",
             techStack: [
                 "React",
-                "Node.js",
-                "Express",
-                "MongoDB",
+                "Laravel",
                 "Socket.io",
+                "MySQL",
                 "Material-UI"
             ],
             demoLink: "https://chatnow.example.com",
@@ -95,18 +73,13 @@ const projects = [
     ]
 ];
 
-
-
-
 export default function Work() {
     const [activeGroup, setActiveGroup] = useState(0);
 
-
-
     return (
         <section className='bg-dark-default p-5 md:p-20' id="work">
-            <h5 className='w-fit px-5 shadow py-1 mx-auto rounded-xl bg-dark-200 text-dark-600 text-sm mb-4'>Work</h5>
-            <p className='text-sm text-center'>Some of the noteworthy projects I have built:</p>
+            <h5 className='w-fit px-5 shadow py-1 mx-auto rounded-xl bg-dark-200 text-dark-600 text-sm mb-4'>Projets</h5>
+            <p className='text-sm text-center'>Quelques-uns des projets notables que j'ai réalisés :</p>
 
             <div className='mt-8 flex flex-col gap-y-8'>
                 {
@@ -125,9 +98,8 @@ export default function Work() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-dark-500 hover:text-dark-800 transition"
-
                                 >
-                                    < FiExternalLink size={25} />
+                                    <FiExternalLink size={25} />
                                 </a>
                             </div>
 
