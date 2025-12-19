@@ -8,9 +8,9 @@ export default function Hero() {
             <div>
                 <h1 className='text-4xl font-black mb-2'>YOUSSEF BOUZIZOUA 👋</h1>
                 <p className='max-w-3xl text-dark-600 text-lg'>
-                    Technicien spécialisé en développement digital, motivé et passionné par les technologies de l’information.
-                    Maîtrise du développement web et des outils numériques, avec une bonne capacité d’adaptation et un esprit d’équipe.
-                    Je souhaite mettre mes compétences au service d’une entreprise innovante et contribuer à sa réussite.
+                    Technicien spécialisé en développement digital, motivé et passionné par les technologies de l'information.
+                    Maîtrise du développement web et des outils numériques, avec une bonne capacité d'adaptation et un esprit d'équipe.
+                    Je souhaite mettre mes compétences au service d'une entreprise innovante et contribuer à sa réussite.
                 </p>
 
                 <div className='mt-8 text-dark-600'>
@@ -28,7 +28,7 @@ export default function Hero() {
                     <a href="#" className='btn btn-ghost btn-sm btn-circle'>
                         <FaGithub size={20} />
                     </a>
-                    <a href="https://linkedin.com/in/youssef-bouzizoua-0a2438271" className='btn btn-ghost btn-sm btn-circle'>
+                    <a href="https://linkedin.com/in/youssef-bouzizoua-0a2438271" target='_blank' className='btn btn-ghost btn-sm btn-circle'>
                         <FaLinkedin size={20} />
                     </a>
                 </div>

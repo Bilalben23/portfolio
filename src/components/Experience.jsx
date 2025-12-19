@@ -15,8 +15,8 @@ const experiences = [
 export default function Experience() {
     return (
         <section className='my-20'>
-            <h4 className='w-fit px-5 shadow py-1 mx-auto rounded-xl bg-dark-200 text-dark-600 text-sm mb-4'>Expériences</h4>
-            <p className='text-center text-sm text-dark-600'>Voici un résumé de mon expérience la plus récente :</p>
+            <h4 className='w-fit px-5 shadow py-1 mx-auto rounded-xl bg-dark-200 text-dark-600 mb-4'>Expériences</h4>
+            <p className='text-center text-dark-600'>Voici un résumé de mon expérience la plus récente :</p>
             <div className='mt-6 flex gap-y-7 items-center flex-col'>
                 {
                     experiences.map(experience => {
@@ -29,7 +29,7 @@ export default function Experience() {
                             </div>
                             <div className='flex-2'>
                                 <p className='font-semibold mb-2'>{experience.title}</p>
-                                <ul className='list list-disc ml-5 text-dark-600 text-sm'>
+                                <ul className='list list-disc ml-5 text-dark-60'>
                                     {
                                         experience.details.map((detail, index) => <li key={index}>{detail}</li>)
                                     }
